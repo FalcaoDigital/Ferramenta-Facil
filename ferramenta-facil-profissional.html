@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ferramenta Fácil | Ferramentas online gratuitas</title>
+<meta name="description" content="Ferramentas online gratuitas para cálculos, porcentagens, conversões, textos, datas, tempo e muito mais.">
+<meta name="theme-color" content="#5b5cf0">
+<style>
+:root{--p:#5b5cf0;--p2:#4647d9;--ink:#172033;--muted:#68738a;--bg:#f7f8fc;--card:#fff;--line:#e7e9f1;--ok:#eafaf1;--shadow:0 12px 35px rgba(27,35,72,.08)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink)}a{text-decoration:none;color:inherit}
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{max-width:1150px;margin:auto;padding:15px 20px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:900;font-size:21px;color:var(--p)}.links{display:flex;gap:20px;color:var(--muted);font-weight:700}.menu{display:none;border:0;background:none;font-size:25px}
+.hero{max-width:1150px;margin:auto;padding:72px 20px 35px;text-align:center}.badge{display:inline-block;background:#eeefff;color:var(--p);padding:7px 12px;border-radius:999px;font-size:13px;font-weight:800}.hero h1{font-size:clamp(38px,7vw,64px);line-height:1.02;margin:18px auto 15px;max-width:850px}.hero h1 span{color:var(--p)}.hero p{max-width:700px;margin:0 auto 27px;color:var(--muted);font-size:18px}.search{max-width:680px;margin:auto;display:flex;background:#fff;border:1px solid var(--line);padding:7px;border-radius:15px;box-shadow:var(--shadow)}.search input{flex:1;border:0;outline:0;padding:12px;font-size:16px}.btn{border:0;background:var(--p);color:#fff;border-radius:10px;padding:12px 17px;font-weight:800;cursor:pointer}.btn:hover{background:var(--p2)}
+.ad{max-width:970px;min-height:90px;margin:20px auto;padding:15px;border:1px dashed #cbd0df;border-radius:12px;color:#9299aa;text-align:center;display:flex;align-items:center;justify-content:center;font-size:12px}
+.container{max-width:1150px;margin:auto;padding:20px}.section-title{display:flex;align-items:end;justify-content:space-between;gap:20px;margin:30px 0 17px}.section-title h2{margin:0;font-size:29px}.section-title p{margin:5px 0 0;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:var(--shadow);transition:.18s}.card:hover{transform:translateY(-3px)}.icon{font-size:31px}.card h3{margin:12px 0 7px}.card p{color:var(--muted);min-height:43px;line-height:1.5}.card .btn{margin-top:6px}
+.panel{display:none;margin:25px 0;background:#fff;border:1px solid var(--line);border-radius:20px;padding:25px;box-shadow:var(--shadow);scroll-margin-top:90px}.panel.active{display:block}.panel h2{margin-top:0}.row{display:flex;gap:10px;flex-wrap:wrap}.row>*{flex:1;min-width:150px}input,select,textarea{width:100%;border:1px solid var(--line);border-radius:10px;padding:12px;font:inherit;outline:0}textarea{min-height:150px;resize:vertical}.result{margin-top:14px;background:#f0f1ff;border-radius:12px;padding:15px;font-weight:800;word-break:break-word}.small{font-size:13px;color:var(--muted)}
+.timer{font-size:50px;text-align:center;font-variant-numeric:tabular-nums;margin:18px}.center{text-align:center}.faq{display:grid;gap:10px}.faq details{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px}.faq summary{font-weight:800;cursor:pointer}
+footer{background:#172033;color:#e6e9f3;margin-top:60px}.foot{max-width:1150px;margin:auto;padding:40px 20px;display:grid;grid-template-columns:2fr 1fr 1fr;gap:30px}.foot p,.foot a{color:#aeb7ca}.foot a{display:block;margin:8px 0}.copy{max-width:1150px;margin:auto;padding:0 20px 25px;color:#8f99ad;font-size:13px}
+@media(max-width:800px){.grid{grid-template-columns:1fr 1fr}.links{display:none}.menu{display:block}.foot{grid-template-columns:1fr 1fr}}@media(max-width:520px){.grid{grid-template-columns:1fr}.hero{padding-top:48px}.search{display:block;background:none;border:0;box-shadow:none}.search input{background:#fff;border:1px solid var(--line);margin-bottom:8px}.search .btn{width:100%}.foot{grid-template-columns:1fr}.section-title{display:block}}
+</style>
+</head>
+<body>
+<header><nav class="nav"><a class="brand" href="#">⚡ Ferramenta Fácil</a><div class="links"><a href="#ferramentas">Ferramentas</a><a href="#sobre">Sobre</a><a href="#faq">FAQ</a></div><button class="menu" onclick="alert('Use os links da página para navegar.')">☰</button></nav></header>
+
+<main>
+<section class="hero">
+<span class="badge">100% online • simples • rápido</span>
+<h1>Resolva pequenas tarefas <span>em segundos.</span></h1>
+<p>Calculadoras, conversores e ferramentas práticas para estudar, trabalhar e organizar o dia — direto do navegador.</p>
+<div class="search"><input id="search" placeholder="Ex.: porcentagem, palavras, datas..." oninput="filterTools()"><button class="btn" onclick="document.getElementById('ferramentas').scrollIntoView()">Pesquisar</button></div>
+</section>
+
+<div class="ad">ESPAÇO PARA ANÚNCIO — será preenchido somente após a aprovação de uma rede de anúncios</div>
+
+<div class="container">
+<section id="ferramentas">
+<div class="section-title"><div><h2>Ferramentas populares</h2><p>Escolha uma ferramenta e use gratuitamente.</p></div></div>
+<div class="grid" id="grid">
+<article class="card" data-name="calculadora"><div class="icon">🧮</div><h3>Calculadora</h3><p>Faça operações matemáticas básicas.</p><button class="btn" onclick="openPanel('calc')">Usar</button></article>
+<article class="card" data-name="porcentagem desconto aumento"><div class="icon">📊</div><h3>Porcentagem</h3><p>Calcule percentuais, descontos e aumentos.</p><button class="btn" onclick="openPanel('percent')">Usar</button></article>
+<article class="card" data-name="palavras caracteres texto"><div class="icon">🔤</div><h3>Contador de texto</h3><p>Conte palavras, caracteres e linhas.</p><button class="btn" onclick="openPanel('words')">Usar</button></article>
+<article class="card" data-name="conversor comprimento peso temperatura"><div class="icon">🔄</div><h3>Conversor de unidades</h3><p>Converta comprimento, peso e temperatura.</p><button class="btn" onclick="openPanel('convert')">Usar</button></article>
+<article class="card" data-name="cronometro tempo timer"><div class="icon">⏱️</div><h3>Cronômetro</h3><p>Marque o tempo com precisão no navegador.</p><button class="btn" onclick="openPanel('timer')">Usar</button></article>
+<article class="card" data-name="datas dias idade calendário"><div class="icon">📅</div><h3>Diferença entre datas</h3><p>Descubra quantos dias existem entre duas datas.</p><button class="btn" onclick="openPanel('dates')">Usar</button></article>
+<article class="card" data-name="media média notas escolar"><div class="icon">🎓</div><h3>Calculadora de média</h3><p>Calcule a média de suas notas rapidamente.</p><button class="btn" onclick="openPanel('average')">Usar</button></article>
+<article class="card" data-name="regra de tres proporcionalidade"><div class="icon">📐</div><h3>Regra de três</h3><p>Resolva proporções de maneira simples.</p><button class="btn" onclick="openPanel('rule3')">Usar</button></article>
+<article class="card" data-name="velocidade distancia tempo"><div class="icon">🚗</div><h3>Velocidade média</h3><p>Calcule velocidade a partir de distância e tempo.</p><button class="btn" onclick="openPanel('speed')">Usar</button></article>
+</div>
+</section>
+
+<section id="workspace">
+<div id="calc" class="panel"><h2>🧮 Calculadora</h2><div class="row"><input id="calcInput" placeholder="Ex.: 25 * 4 + 10 / 2"><button class="btn" onclick="calculate()">Calcular</button></div><div class="result" id="calcResult">Digite uma expressão.</div></div>
+
+<div id="percent" class="panel"><h2>📊 Porcentagem</h2><div class="row"><input id="pv" type="number" placeholder="Valor"><input id="pr" type="number" placeholder="Porcentagem"></div><div class="row" style="margin-top:10px"><button class="btn" onclick="pct('part')">Calcular %</button><button class="btn" onclick="pct('discount')">Desconto</button><button class="btn" onclick="pct('increase')">Aumento</button></div><div class="result" id="pout">Preencha os campos.</div></div>
+
+<div id="words" class="panel"><h2>🔤 Contador de texto</h2><textarea id="txt" oninput="words()" placeholder="Digite ou cole seu texto..."></textarea><div class="result" id="wout">0 palavras • 0 caracteres • 0 linhas</div></div>
+
+<div id="convert" class="panel"><h2>🔄 Conversor de unidades</h2><div class="row"><select id="ctype" onchange="units()"><option value="length">Comprimento</option><option value="weight">Peso</option><option value="temp">Temperatura</option></select><input id="cval" type="number" placeholder="Valor"></div><div class="row" style="margin-top:10px"><select id="from"></select><select id="to"></select><button class="btn" onclick="convert()">Converter</button></div><div class="result" id="cout">Escolha as unidades.</div></div>
+
+<div id="timer" class="panel"><h2>⏱️ Cronômetro</h2><div class="timer" id="td">00:00:00.00</div><div class="center"><button class="btn" onclick="startT()">Iniciar</button> <button class="btn" onclick="pauseT()">Pausar</button> <button class="btn" onclick="resetT()">Zerar</button></div></div>
+
+<div id="dates" class="panel"><h2>📅 Diferença entre datas</h2><div class="row"><input id="d1" type="date"><input id="d2" type="date"><button class="btn" onclick="dateDiff()">Calcular</button></div><div class="result" id="dout">Escolha duas datas.</div></div>
+
+<div id="average" class="panel"><h2>🎓 Calculadora de média</h2><input id="grades" placeholder="Ex.: 7, 8.5, 9, 6.5"><button class="btn" style="margin-top:10px" onclick="avg()">Calcular média</button><div class="result" id="aout">Digite as notas separadas por vírgula.</div></div>
+
+<div id="rule3" class="panel"><h2>📐 Regra de três</h2><div class="row"><input id="r1" type="number" placeholder="A"><input id="r2" type="number" placeholder="B"><input id="r3" type="number" placeholder="C"><button class="btn" onclick="rule3()">Calcular D</button></div><div class="result" id="rout">A : B = C : D</div></div>
+
+<div id="speed" class="panel"><h2>🚗 Velocidade média</h2><div class="row"><input id="dist" type="number" placeholder="Distância (km)"><input id="hours" type="number" placeholder="Tempo (h)"><button class="btn" onclick="speed()">Calcular</button></div><div class="result" id="sout">Preencha distância e tempo.</div></div>
+</section>
+
+<div class="ad">ESPAÇO PARA ANÚNCIO</div>
+
+<section id="sobre" style="scroll-margin-top:90px"><div class="section-title"><div><h2>Sobre o projeto</h2><p>O Ferramenta Fácil reúne utilidades gratuitas em uma única página.</p></div></div><div class="card"><p class="small">As ferramentas básicas funcionam localmente no navegador. O projeto pode crescer com novas ferramentas, páginas explicativas e conteúdo original. Antes de monetizar, é importante publicar informações de contato, privacidade e outras páginas necessárias para o serviço.</p></div></section>
+
+<section id="faq" style="scroll-margin-top:90px"><div class="section-title"><div><h2>Perguntas frequentes</h2><p>Informações rápidas sobre o site.</p></div></div><div class="faq">
+<details><summary>Preciso criar uma conta?</summary><p>Não. As ferramentas desta versão funcionam sem cadastro.</p></details>
+<details><summary>O site funciona no celular?</summary><p>Sim. O layout foi pensado para telas pequenas e grandes.</p></details>
+<details><summary>Como o projeto pode ganhar dinheiro?</summary><p>Uma possibilidade é publicidade, além de outras formas de monetização compatíveis com as regras das plataformas utilizadas.</p></details>
+</div></section>
+</div>
+</main>
+
+<footer><div class="foot"><div><strong>⚡ Ferramenta Fácil</strong><p>Ferramentas online gratuitas para tarefas do dia a dia.</p></div><div><strong>Site</strong><a href="#ferramentas">Ferramentas</a><a href="#sobre">Sobre</a><a href="#faq">FAQ</a></div><div><strong>Importante</strong><a href="#">Privacidade</a><a href="#">Termos de uso</a><a href="#">Contato</a></div></div><div class="copy">© 2026 Ferramenta Fácil. Projeto independente.</div></footer>
+
+<script>
+function openPanel(id){document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));let x=document.getElementById(id);x.classList.add('active');x.scrollIntoView({behavior:'smooth',block:'center'});if(id==='convert')units()}
+function filterTools(){let q=document.getElementById('search').value.toLowerCase();document.querySelectorAll('.card[data-name]').forEach(c=>c.style.display=c.dataset.name.includes(q)?'block':'none')}
+function calculate(){let v=document.getElementById('calcInput').value.trim(),o=document.getElementById('calcResult');if(!/^[0-9+\-*/().%\s]+$/.test(v)){o.textContent='Expressão inválida.';return}try{o.textContent='Resultado: '+Function('"use strict";return ('+v+')')()}catch(e){o.textContent='Não foi possível calcular.'}}
+function pct(t){let v=+pv.value,p=+pr.value;if(!Number.isFinite(v)||!Number.isFinite(p)){pout.textContent='Preencha os dois valores.';return}pout.textContent=t==='part'?`${p}% de ${v} = ${v*p/100}`:t==='discount'?`Com ${p}% de desconto: ${v*(1-p/100)}`:`Com ${p}% de aumento: ${v*(1+p/100)}`}
+function words(){let t=txt.value,w=t.trim()?t.trim().split(/\s+/).length:0,l=t?t.split(/\n/).length:0;wout.textContent=`${w} palavras • ${t.length} caracteres • ${l} linhas`}
+const U={length:{m:1,km:1000,cm:.01,mm:.001,ft:.3048},weight:{kg:1,g:.001,lb:.45359237,oz:.0283495},temp:{C:1,F:1,K:1}};
+function units(){let k=Object.keys(U[ctype.value]);from.innerHTML=k.map(x=>`<option>${x}</option>`).join('');to.innerHTML=k.map(x=>`<option>${x}</option>`).join('')}
+function convert(){let v=+cval.value,a=from.value,b=to.value,t=ctype.value;if(!Number.isFinite(v)){cout.textContent='Digite um valor.';return}let z;if(t==='temp'){let c=a==='C'?v:a==='F'?(v-32)*5/9:v-273.15;z=b==='C'?c:b==='F'?c*9/5+32:c+273.15}else z=v*U[t][a]/U[t][b];cout.textContent=`Resultado: ${z}`}
+let st=0,el=0,it;function fmt(ms){let cs=Math.floor(ms/10)%100,s=Math.floor(ms/1000)%60,m=Math.floor(ms/60000)%60,h=Math.floor(ms/3600000);return `${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}.${String(cs).padStart(2,'0')}`}
+function render(){td.textContent=fmt(el+(st?Date.now()-st:0))}function startT(){if(!st){st=Date.now();it=setInterval(render,30)}}function pauseT(){if(st){el+=Date.now()-st;st=0;clearInterval(it);render()}}function resetT(){st=0;el=0;clearInterval(it);render()}
+function dateDiff(){if(!d1.value||!d2.value){dout.textContent='Escolha duas datas.';return}let a=new Date(d1.value+'T00:00:00'),b=new Date(d2.value+'T00:00:00');dout.textContent=`Diferença: ${Math.round(Math.abs(b-a)/86400000)} dias`}
+function avg(){let a=grades.value.split(',').map(Number).filter(Number.isFinite);aout.textContent=a.length?`Média: ${(a.reduce((x,y)=>x+y,0)/a.length).toFixed(2)}`:'Digite notas válidas.'}
+function rule3(){let a=+r1.value,b=+r2.value,c=+r3.value;rout.textContent=(a&&b&&Number.isFinite(c))?`D = ${(b*c/a).toFixed(4)}`:'Preencha A, B e C.'}
+function speed(){let d=+dist.value,h=+hours.value;sout.textContent=d>0&&h>0?`Velocidade média: ${(d/h).toFixed(2)} km/h`:'Informe valores positivos.'}
+units();
+</script>
+</body>
+</html>
